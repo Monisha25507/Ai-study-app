@@ -9,7 +9,7 @@ import toast from 'react-hot-toast';
 import { Upload, FileText, Trash2, ExternalLink, Sparkles } from 'lucide-react';
 import * as pdfjsLib from 'pdfjs-dist';
 
-pdfjsLib.GlobalWorkerOptions.workerSrc = `https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.3.136/pdf.worker.min.js`;
+pdfjsLib.GlobalWorkerOptions.workerSrc = `https://unpkg.com/pdfjs-dist@4.3.136/build/pdf.worker.min.mjs`;
 
 const PDFs = () => {
   const { user } = useAuth();
